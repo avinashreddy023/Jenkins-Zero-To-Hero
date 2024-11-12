@@ -14,8 +14,7 @@ pipeline {
         docker { image 'ubuntu:latest' }
       }
       steps {
-        sh sudo apt update
-        sh sudo apt install tree
+        sh sudo apt tree -y
       }
     }
   }
